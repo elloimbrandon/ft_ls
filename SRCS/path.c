@@ -6,7 +6,7 @@
 /*   By: brfeltz <brfeltz@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/28 18:21:45 by brandonf          #+#    #+#             */
-/*   Updated: 2019/09/02 05:10:49 by brfeltz          ###   ########.fr       */
+/*   Updated: 2019/09/03 17:21:00 by brfeltz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,11 +43,12 @@ void	free_recur(t_info *recur_path)
 {
 	free(recur_path->flags);
 	free(recur_path->dirs);
-	free(recur_path);
+	free(recur_path->path);
 }
 
 void	free_all(t_info *info)
 {
+	free(info->dirs);
 	free(info->files);
 	free(info->path);
 	free(info->flags);
