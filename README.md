@@ -1,7 +1,7 @@
 <p align="center">
   <div align="center">
    <img src="assets/images/ft_ls-gif.gif" width="425px"</img><br>
-    <em><small><i>Shell unix command line interpreter .. but mini!</i></small></em>
+    <em><small><i>Unix command ls!</i></small></em>
   </div>
 </p>
 
